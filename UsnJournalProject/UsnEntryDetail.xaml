@@ -1,0 +1,14 @@
+﻿<!--UsnEntryDetail.xaml-->
+<Window x:Class="UsnJournalProject.UsnEntryDetail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="USN Entry Detail" 
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="Manual"
+        ShowInTaskbar="False">
+    <StackPanel Name="entryDock">
+        <Label Name="_nameLbl" MouseDoubleClick="_nameLbl_MouseDoubleClick"/>
+        <Label Name="_pathLbl" MouseDoubleClick="_nameLbl_MouseDoubleClick"/>
+        <Label Name="_entryDetailLbl" />
+    </StackPanel>
+</Window>

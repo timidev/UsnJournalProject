@@ -1,0 +1,13 @@
+<!--UpdateUsnStateDialog.xaml-->
+<Window x:Class="UsnJournalProject.UpdateUsnStateDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Update Usn Journal State" SizeToContent="WidthAndHeight" 
+        WindowStartupLocation="CenterOwner"
+        ShowInTaskbar="False">
+    <DockPanel>
+        <Label Content="Update USN Journal State?" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top"/>
+        <Button Name="_cancel" Content="_Cancel" DockPanel.Dock="right" HorizontalAlignment="Center" Margin="3" Click="_cancel_Click"/>
+        <Button Name="_ok" Content="_Ok" DockPanel.Dock="Right" HorizontalAlignment="Center" Width="44" Margin="3" IsDefault="True" Click="_ok_Click"/>
+    </DockPanel>
+</Window>

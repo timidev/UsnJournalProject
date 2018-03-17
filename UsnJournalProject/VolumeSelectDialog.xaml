@@ -1,0 +1,33 @@
+﻿<!--VolumeSelectDialog.xaml-->
+<Window x:Class="UsnJournalProject.VolumeSelectDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="VolumeSelectDialog" Height="300" Width="300" SizeToContent="WidthAndHeight" ShowInTaskbar="False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition  Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Name="selectionStack">
+            <ListBox Name="drivesLb" Grid.Column="0" Grid.Row="0" Margin="5" DockPanel.Dock="Top" 
+                     SelectionChanged="drivesLb_Selectionchanged" MouseDoubleClick="drivesLb_MouseDoubleClick">
+
+            </ListBox>
+            <TextBox Name="selectionerrorTb" DockPanel.Dock="Bottom" Foreground="Red" Visibility="Hidden"/>
+        </DockPanel>
+        <DockPanel Grid.Column="0" Grid.Row="1">
+            <Button Name="cancelBtn" IsCancel="True" DockPanel.Dock="Right" Margin="2.5,5,5,5"
+                    HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="cancel_Click">
+                _Cancel
+            </Button>
+            <Button Name="okBtn" IsDefault="True" Margin="2.5,5,5,5"
+                    Width="45"
+                    HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="ok_Click">
+                _Ok
+            </Button>
+        </DockPanel>
+    </Grid>
+</Window>

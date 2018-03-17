@@ -1,0 +1,14 @@
+<!--EnterFileFilterString.xaml-->
+<Window x:Class="UsnJournalProject.EnterFileFilterString"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="EnterFileFilterString" SizeToContent="WidthAndHeight" 
+    WindowStartupLocation="CenterOwner"
+    ShowInTaskbar="False">
+    <DockPanel>
+        <Label Content="Enter file types to include in list" HorizontalAlignment="Center" VerticalAlignment="Center" DockPanel.Dock="Top"/>
+        <TextBox Name="_fileFilterTb" HorizontalAlignment="Stretch" VerticalAlignment="Top" DockPanel.Dock="Top" PreviewMouseDown="_fileFilter_PreviewMouseDown" Text="*"/>
+        <Button Name="_cancel" Content="_Cancel" DockPanel.Dock="right" HorizontalAlignment="Center" Margin="3" Click="_cancel_Click"/>
+        <Button Name="_ok" Content="_Ok" DockPanel.Dock="Right" HorizontalAlignment="Center" Width="44" Margin="3" IsDefault="True" Click="_ok_Click"/>
+    </DockPanel>
+</Window>
